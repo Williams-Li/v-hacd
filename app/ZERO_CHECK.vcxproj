@@ -1,5 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
   <PropertyGroup>
     <ResolveNugetPackages>false</ResolveNugetPackages>
   </PropertyGroup>
@@ -22,9 +25,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{977FE07B-6009-30DD-BBF0-0CB7669DEED9}</ProjectGuid>
+    <ProjectGuid>{DC6CCDBE-B9EC-3319-9111-C75D6DD65CE2}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
     <ProjectName>ZERO_CHECK</ProjectName>
     <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
@@ -33,22 +36,22 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -105,10 +108,12 @@
     </Midl>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\github\v-hacd\app\CMakeFiles\39ddef21748f7d13f6f046c00e7a347e\generate.stamp.rule">
+    <CustomBuild Include="D:\GitHubRepos\v-hacd\app\CMakeFiles\b3a61f1fb9e7d4a43f1d3cffc10331d0\generate.stamp.rule">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Checking Build System</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/github/v-hacd/app -BD:/github/v-hacd/app --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/github/v-hacd/app/TestVHACD.sln
+"D:\Program Files\CMake\bin\cmake.exe" -SD:/GitHubRepos/v-hacd/app -BD:/GitHubRepos/v-hacd/app --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/GitHubRepos/v-hacd/app/TestVHACD.sln
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -116,12 +121,13 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;D:\github\v-hacd\app\CMakeFiles\3.24.2\CMakeCCompiler.cmake;D:\github\v-hacd\app\CMakeFiles\3.24.2\CMakeCXXCompiler.cmake;D:\github\v-hacd\app\CMakeFiles\3.24.2\CMakeRCCompiler.cmake;D:\github\v-hacd\app\CMakeFiles\3.24.2\CMakeSystem.cmake;D:\github\v-hacd\app\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\github\v-hacd\app\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\GitHubRepos\v-hacd\app\CMakeFiles\3.31.9\CMakeCCompiler.cmake;D:\GitHubRepos\v-hacd\app\CMakeFiles\3.31.9\CMakeCXXCompiler.cmake;D:\GitHubRepos\v-hacd\app\CMakeFiles\3.31.9\CMakeRCCompiler.cmake;D:\GitHubRepos\v-hacd\app\CMakeFiles\3.31.9\CMakeSystem.cmake;D:\GitHubRepos\v-hacd\app\CMakeLists.txt;D:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCLinkerInformation.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\GitHubRepos\v-hacd\app\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</BuildInParallel>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Checking Build System</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/github/v-hacd/app -BD:/github/v-hacd/app --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/github/v-hacd/app/TestVHACD.sln
+"D:\Program Files\CMake\bin\cmake.exe" -SD:/GitHubRepos/v-hacd/app -BD:/GitHubRepos/v-hacd/app --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/GitHubRepos/v-hacd/app/TestVHACD.sln
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -129,12 +135,13 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;D:\github\v-hacd\app\CMakeFiles\3.24.2\CMakeCCompiler.cmake;D:\github\v-hacd\app\CMakeFiles\3.24.2\CMakeCXXCompiler.cmake;D:\github\v-hacd\app\CMakeFiles\3.24.2\CMakeRCCompiler.cmake;D:\github\v-hacd\app\CMakeFiles\3.24.2\CMakeSystem.cmake;D:\github\v-hacd\app\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\github\v-hacd\app\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\GitHubRepos\v-hacd\app\CMakeFiles\3.31.9\CMakeCCompiler.cmake;D:\GitHubRepos\v-hacd\app\CMakeFiles\3.31.9\CMakeCXXCompiler.cmake;D:\GitHubRepos\v-hacd\app\CMakeFiles\3.31.9\CMakeRCCompiler.cmake;D:\GitHubRepos\v-hacd\app\CMakeFiles\3.31.9\CMakeSystem.cmake;D:\GitHubRepos\v-hacd\app\CMakeLists.txt;D:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCLinkerInformation.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\GitHubRepos\v-hacd\app\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</BuildInParallel>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Checking Build System</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/github/v-hacd/app -BD:/github/v-hacd/app --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/github/v-hacd/app/TestVHACD.sln
+"D:\Program Files\CMake\bin\cmake.exe" -SD:/GitHubRepos/v-hacd/app -BD:/GitHubRepos/v-hacd/app --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/GitHubRepos/v-hacd/app/TestVHACD.sln
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -142,12 +149,13 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;D:\github\v-hacd\app\CMakeFiles\3.24.2\CMakeCCompiler.cmake;D:\github\v-hacd\app\CMakeFiles\3.24.2\CMakeCXXCompiler.cmake;D:\github\v-hacd\app\CMakeFiles\3.24.2\CMakeRCCompiler.cmake;D:\github\v-hacd\app\CMakeFiles\3.24.2\CMakeSystem.cmake;D:\github\v-hacd\app\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\github\v-hacd\app\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\GitHubRepos\v-hacd\app\CMakeFiles\3.31.9\CMakeCCompiler.cmake;D:\GitHubRepos\v-hacd\app\CMakeFiles\3.31.9\CMakeCXXCompiler.cmake;D:\GitHubRepos\v-hacd\app\CMakeFiles\3.31.9\CMakeRCCompiler.cmake;D:\GitHubRepos\v-hacd\app\CMakeFiles\3.31.9\CMakeSystem.cmake;D:\GitHubRepos\v-hacd\app\CMakeLists.txt;D:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCLinkerInformation.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\GitHubRepos\v-hacd\app\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</BuildInParallel>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Checking Build System</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/github/v-hacd/app -BD:/github/v-hacd/app --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/github/v-hacd/app/TestVHACD.sln
+"D:\Program Files\CMake\bin\cmake.exe" -SD:/GitHubRepos/v-hacd/app -BD:/GitHubRepos/v-hacd/app --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/GitHubRepos/v-hacd/app/TestVHACD.sln
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -155,13 +163,14 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;D:\github\v-hacd\app\CMakeFiles\3.24.2\CMakeCCompiler.cmake;D:\github\v-hacd\app\CMakeFiles\3.24.2\CMakeCXXCompiler.cmake;D:\github\v-hacd\app\CMakeFiles\3.24.2\CMakeRCCompiler.cmake;D:\github\v-hacd\app\CMakeFiles\3.24.2\CMakeSystem.cmake;D:\github\v-hacd\app\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\github\v-hacd\app\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\GitHubRepos\v-hacd\app\CMakeFiles\3.31.9\CMakeCCompiler.cmake;D:\GitHubRepos\v-hacd\app\CMakeFiles\3.31.9\CMakeCXXCompiler.cmake;D:\GitHubRepos\v-hacd\app\CMakeFiles\3.31.9\CMakeRCCompiler.cmake;D:\GitHubRepos\v-hacd\app\CMakeFiles\3.31.9\CMakeSystem.cmake;D:\GitHubRepos\v-hacd\app\CMakeLists.txt;D:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCLinkerInformation.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\GitHubRepos\v-hacd\app\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
